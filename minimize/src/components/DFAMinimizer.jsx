@@ -91,7 +91,7 @@ const DFAMinimizer = ({ dfa }) => {
 
   return (
     <div>
-      <h2>Minimized DFA</h2>
+      <h1>After Minimized</h1>
       <DFADisplay dfa={minimizedDFA} />
     </div>
   );
