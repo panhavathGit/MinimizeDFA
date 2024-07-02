@@ -34,6 +34,50 @@
   align-items: center;
   height: 100vh;
 } */
+.title{
+  text-align: center;
+  color: #7ddbd7;
+}
 
+.State-Output{
+  border: 2px solid blue;
+  border-radius: 20px;
+  height: 60vh;
+  padding: 20px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+  width: 40%;
+  font-size: large;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
 
+}
+.graph{
+  border: 2px solid red;
+  border-radius: 20px;
+  height: 60vh;
+  padding: 20px;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Initial shadow */
+  width: 40%; 
+}
+
+.graph:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.State-Output:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.result{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  /* background-color: aqua; */
+  gap: 20px;
+  
+}
 

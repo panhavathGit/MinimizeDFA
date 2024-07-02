@@ -13,7 +13,7 @@ const minimizeDFA = (dfa) => {
 
   // Helper function to check if two sets are equal
   const setsEqual = (a, b) => a.size === b.size && [...a].every(value => b.has(value));
-
+  
   // Step 2: Refinement process
   while (W.length > 0) {
     const A = W.pop();
@@ -110,8 +110,8 @@ const DFAMinimizer = ({ dfa }) => {
 
   return (
     <div>
-      <h1>After Minimized</h1>
-      <DFADisplay dfa={minimizedDFA} />
+      {/* <h1>After Minimized</h1> */}
+      <DFADisplay dfaPropDisplay={minimizedDFA} />
       {/* <Graphviz dot={dotString} /> */}
     </div>
   );

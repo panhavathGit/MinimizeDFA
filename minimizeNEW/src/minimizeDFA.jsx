@@ -14,9 +14,10 @@ const MinimizeAPP = () => {
 
   return (
     <div className="App">
-      <h1>DFA Minimizer</h1>
-      <DFAInput onSubmit={handleDfaSubmit} />
-      {dfa && <DFADisplay dfa={dfa} />}
+      <h1 className='title'>DFA Minimizer</h1>
+      <DFAInput onubmit={handleDfaSubmit} />
+      {dfa && <DFADisplay dfaPropDisplay={dfa} />}
+      <h1 className='title'>After Minimized</h1>
       {dfa && <DFAMinimizer dfa={dfa} />}
     </div>
   );
